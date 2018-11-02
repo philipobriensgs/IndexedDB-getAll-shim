@@ -97,7 +97,7 @@ var globalVar = typeof window !== 'undefined' ? window :
                     }
                     result.push(value);
                     if (count === undefined || result.length < count) {
-                        cursor.continue();
+                        cursor["continue"]();
                         return;
                     }
                 }
